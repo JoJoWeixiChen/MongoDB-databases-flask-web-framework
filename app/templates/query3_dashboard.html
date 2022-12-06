@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query1</title>
+    <style>
+        body
+        {
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size:100%;
+        background-image:url({{url_for('static',filename='dhl-logo.jpeg')}})
+        }
+    </style>
+</head>
+<body>
+<h1>Please select the column you want to update</h1>
+<p><a href="{{ url_for('update_cases') }}">Update case information</a></p>
+<p><a href="{{ url_for('update_weight') }}">Update weight information</a></p>
+<p><a href="{{ url_for('update_distance') }}">Update distance information</a></p>
+<p><a href="{{ url_for('update_volume') }}">Update volume information</a></p>
+</body>

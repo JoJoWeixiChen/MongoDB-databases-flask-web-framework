@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query1</title>
+    <style>
+        body
+        {
+        background-image:url({{url_for('static',filename='dhl-logo1.png')}})
+        }
+    </style>
+</head>
+<body>Please inert data below</h1>
+<div align="center" style="margin-top: 40px;">
+    <form name="query"     method="POST">
+    Customer =<input type="text" placeholder="customer" name="customer" value="{{ var1  }}">
+    Distance =<input type="text" placeholder="distance" name="distance" value="{{ var1  }}">
+    Cases =<input type="text" placeholder="cases" name="cases" value="{{ var1  }}">
+    Weight =<input type="text" placeholder="weight" name="weight" value="{{ var1  }}">
+    Volume =<input type="text" placeholder="volume" name="volume" value="{{ var1  }}">
+    Actual Carrier =<input type="text" placeholder="actual carrier" name="actual_carrier" value="{{ var1  }}">
+    Actual Model =<input type="text" placeholder="actual model" name="actual_mode" value="{{ var1  }}">
+    Actual Equipment =<input type="text" placeholder="actual equipment" name="actual_equip" value="{{ var1  }}">
+    Pick-up approximate =<input type="text" placeholder="pick-up approximate" name="pu_appt" value="{{ var1  }}">
+    Delivery approximate =<input type="text" placeholder="delivery approximate" name="dl_appt" value="{{ var1  }}">
+    Linehaul costs =<input type="text" placeholder="linehaul costs" name="linehaul_costs" value="{{ var1  }}">
+    Original Latitude =<input type="text" placeholder="original latitude" name="origin_lat" value="{{ var1  }}">
+    Original Longtitude =<input type="text" placeholder="original longtitude" name="origin_lng" value="{{ var1  }}">
+    Destination Latitude =<input type="text" placeholder="destination latitude" name="dest_lat" value="{{ var1  }}">
+    Destination Longtitude =<input type="text" placeholder="destination longtitude" name="dest_lng" value="{{ var1  }}">
+    Avrage spot linehaul cost rate =<input type="text" placeholder="average spot linehaul cost rate" name="spot_avg_linehaul_rate" value="{{ var1  }}">
+    Low spot linehaul cost rate =<input type="text" placeholder="low spot linehaul cost rate" name="spot_low_linehaul_rate" value="{{ var1  }}">
+    High spot linehaul cost rate =<input type="text" placeholder="high spot linehaul cost rate" name="spot_high_linehaul_rate" value="{{ var1  }}">
+    Spot fuel surcharge =<input type="text" placeholder="spot fuel surcharge" name="spot_fuel_surcharge" value="{{ var1  }}">
+    Spot time frame =<input type="text" placeholder="spot time frame" name="spot_time_frame" value="{{ var1  }}">
+    Avrage contract linehaul cost rate =<input type="text" placeholder="average contract linehaul cost rate" name="contract_avg_linehaul_rate" value="{{ var1  }}">
+    Low contract linehaul cost rate =<input type="text" placeholder="low contract linehaul cost rate" name="contract_low_linehaul_rate" value="{{ var1  }}">
+    High contract linehaul cost rate =<input type="text" placeholder="high contract linehaul cost rate" name="contract_high_linehaul_rate" value="{{ var1  }}">
+    Contract fuel surcharge =<input type="text" placeholder="contract fuel surcharge" name="contract_fuel_surcharge" value="{{ var1  }}">
+    Contract average accessorial excludes fuel =<input type="text" placeholder="contract average accessorial excludes fuel" name="contract_avg_accessorial_excludes_fuel" value="{{ var1  }}">
+    Contract time frame =<input type="text" placeholder="contract time frame" name="contract_time_frame" value="{{ var1  }}"> 
+        <input type="submit" value="Submit" οnclick="">
+    </form>
+
+</div>
+{% if message %}
+    <p style="color:red">{{ message }}</p>
+    {% endif %}
+</body>

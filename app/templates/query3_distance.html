@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query1</title>
+    <style>
+        body
+        {
+        background-image:url({{url_for('static',filename='dhl-logo1.png')}})
+        }
+    </style>
+</head>
+<body>
+<h1>Please update distance information with customer id</h1>
+<div align="center" style="margin-top: 40px;">
+    <form name="query"     method="POST">
+        Customer ID =<input type="text" placeholder="customer id" name="customer" value="{{ var1  }}">
+        Distance =<input type="text" placeholder="distance" name="distance" value="{{ var1  }}">     
+        <input type="submit" value="Submit" οnclick="">
+    </form>
+
+</div>
+{% if message %}
+    <p style="color:red">{{ message }}</p>
+    {% endif %}
+</body>

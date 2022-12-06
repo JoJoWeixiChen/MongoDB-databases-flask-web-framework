@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query1</title>
+    <style>
+        body
+        {
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size:100%;
+        background-image:url({{url_for('static',filename='dhl-logo.jpeg')}})
+        }
+    </style>
+</head>
+<body>
+<h1>Search the actual model you want to learn more!</h1>
+<div align="center" style="margin-top: 40px;">
+    <form name="query"     method="POST">
+        Actual Model =<input type="text" placeholder="Actual Model" name="actual_mode" value="{{ var1  }}">
+        <input type="submit" value="Submit" οnclick="">
+    </form>
+
+</div>
+{% if message %}
+    <p style="color:red">{{ message }}</p>
+    {% endif %}
+</body>

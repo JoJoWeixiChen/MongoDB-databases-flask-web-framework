@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query1</title>
+    <style>
+        body
+        {
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size:100%;
+        background-image:url({{url_for('static',filename='dhl-logo.jpeg')}})
+        }
+    </style>
+</head>
+<body>
+<h1>Please input the customer id you want to update</h1>
+<p><a href="{{ url_for('return_mt') }}">Get MT data with specified amount</a></p>
+<p><a href="{{ url_for('return_dat') }}">Get DAT data with specified amount</a></p>
+</body>

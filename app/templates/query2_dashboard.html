@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query2_dashboard</title>
+    <style>
+        body
+        {
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size:100%;
+        background-image:url({{url_for('static',filename='dhl-logo.jpeg')}})
+        }
+    </style>
+</head>
+<body>
+<h1>Please select the column you want to use to delete data</h1>
+<p><a href="{{ url_for('remove_by_customer') }}">Delete data based on customer</a></p>
+<p><a href="{{ url_for('remove_by_cases') }}">Delete data based on amount of cases</a></p>
+<p><a href="{{ url_for('remove_by_distance') }}">Delete data based on distance</a></p>
+<p><a href="{{ url_for('remove_by_weight') }}">Delete data based on weight</a></p>
+</body>

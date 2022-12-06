@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to TransRater Dataset!</title>
+</head>
+<body>
+    <h1>Welcome to TransRater Database!</h1>
+    <center><img src="{{ user_image }}"></center>
+    <p><a href="{{ url_for('query1') }}">Database by actual model</a></p>
+    <p><a href="{{ url_for('query2_dashboard') }}">Delete data</a></p>
+    <p><a href="{{ url_for('query3_dashboard') }}">Update customer information with id</a></p>
+    <p><a href="{{ url_for('query4') }}">Select certain size of specified actual model</a></p>
+    <p><a href="{{ url_for('stais_report') }}">Check data stats</a></p>
+    <p><a href="{{ url_for('query6') }}">Insert new data to TransRater database</a></p>
+    <p><a href="{{ url_for('query7_dashboard') }}">Return MT data and DAT data</a></p>
+</body>
+</html>

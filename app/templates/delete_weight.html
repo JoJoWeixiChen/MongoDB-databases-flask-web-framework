@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query2</title>
+    <style>
+        body
+        {
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size:100%;
+        background-image:url({{url_for('static',filename='dhl-logo.jpeg')}})
+        }
+    </style>
+</head>
+<body>
+<h1>Delete data by customer id</h1>
+<div align="center" style="margin-top: 40px;">
+    <form name="query"     method="POST">
+        Weight =<input type="text" placeholder="weight" name="weight" value="{{ var1  }}">
+        <input type="submit" value="Submit" οnclick="">
+    </form>
+
+</div>
+{% if message %}
+    <p style="color:red">{{ message }}</p>
+    {% endif %}
+</body>
